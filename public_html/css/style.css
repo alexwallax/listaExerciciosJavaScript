@@ -1,1 +1,28 @@
+#geral {
+       background-color: azure;
+     
+    
+}
 
+#esquerda {
+    
+    background-color: #ebebeb;
+    height: 400px;
+    width: 33%;
+    
+}
+#central {
+     
+    background-color: #67b168;
+    height: 400px;
+    width: 34%;
+       
+}
+
+#direita {
+     
+    background-color: #ebebeb;
+    height: 400px;
+    width: 33%;
+       
+}
