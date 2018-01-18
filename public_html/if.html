@@ -15,14 +15,18 @@
             m = (n1 * 4 + n2 * 5 + n3 * 6) / 15;
            
             if(m >= 7) {
-                alert("Aprovado" + "sua media foi " + m);
+                alert("Aprovado sua media foi " + m);
             } else if(m < 3) {
-                alert("Reprovado" + "sua media foi " + m);           
+                alert("Reprovado sua media foi " + m);           
             } else {
                 n4 = parseFloat(prompt("Digite a 4ª nota"));
                                    
                 m = (m + n4) / 2;
-                if()
+                if(m >= 5) {
+                    alert("Aprovado na 4ª prova com a media " + m);
+                } else {
+                    alert("Reprovado na 4ª prova com a media " + m);
+                }
     }
         
             
