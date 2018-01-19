@@ -1,3 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+div {
+    margin: 2px;
+    padding: 5px;
+    
+}
 #geral {
        background-color: azure;
      
@@ -7,14 +17,14 @@
 #esquerda {
     
     background-color: #ebebeb;
-    height: 400px;
+    height: 390px;
     width: 33%;
     
 }
 #central {
      
     background-color: #67b168;
-    height: 400px;
+    height: 390px;
     width: 34%;
        
 }
@@ -22,7 +32,7 @@
 #direita {
      
     background-color: #ebebeb;
-    height: 400px;
+    height: 390px;
     width: 33%;
        
 }
