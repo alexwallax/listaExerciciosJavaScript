@@ -78,9 +78,11 @@ function exercicio03() {
         
         for(a = 1; a < 50; a++) {
         sexo = prompt("Digite o sexo m/f");
-            if(sexo == "m" ) {
+            if(sexo === "m" || sexo === "M") {
+                sexo = "Masculino";
                 break;
-            } else if (sexo == "f") {
+            } else if (sexo === "f" || sexo === "F") {
+                sexo = "Feminino";
                 break;
             } else {
                 alert("Sexo invalido digite m/f");
@@ -88,14 +90,29 @@ function exercicio03() {
         
         }
         
+        for(a = 1; a < 50; a++) {
         estado = prompt("Estado civil - s / c / v / d");
-        
-
-        
+            if(estado === "s" || estado === "S") {
+                estado = "Solteiro(a)";
+            break;
+        } else if(estado === "c" || estado === "C") {
+                estado = "Casado(a)";
+            break;
+        } else if(estado === "v" || estado === "V") {
+                estado = "Viuvo(a)";
+            break;
+        } else if(estado === "d" || estado === "D") {
+                estado = "Divorciado(a)";
+            break;
+        } else {
+            alert("Opção invalida tente denovo ");
+        }      
     }
     
+        alert("Bem vindo cadastro feito com sucesso");
+        alert("Nome " + nome + "\n Idade " + idade + " anos \n Salario " + salario.toFixed(2) + "\n Sexo " + sexo + "\n Estsdo cívil " + estado);   
+    }
 }
-
 
 
 
