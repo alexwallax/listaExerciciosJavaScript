@@ -1,7 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
-   
+    padding: 0; 
 }
 div {
     margin: 2px;
@@ -10,28 +9,33 @@ div {
 }
 #geral {
        background-color: azure;
-     
-    
+
 }
 
 #esquerda {
     
-    background-color: #ebebeb;
+    padding: 20px;
+    background: linear-gradient(red, yellow);
+    border-radius: 40px;
     height: 390px;
     width: 33%;
     
 }
 #central {
      
-    background-color: #67b168;
+    padding: 20px;
+    background: linear-gradient(#ffffff, background );
+    border-radius: 40px;
     height: 390px;
-    width: 34%;
+    width: 33%;
        
 }
 
 #direita {
      
-    background-color: #ebebeb;
+    padding: 20px;
+    background:linear-gradient(darkorange, aqua);
+    border-radius: 40px;
     height: 390px;
     width: 33%;
        

@@ -78,10 +78,10 @@ function exercicio03() {
         
         for(a = 1; a < 50; a++) {
         sexo = prompt("Digite o sexo m/f");
-            if(sexo === "m" || sexo === "M") {
+            if(sexo.toUpperCase() === "M") {
                 sexo = "Masculino";
                 break;
-            } else if (sexo === "f" || sexo === "F") {
+            } else if (sexo.toUpperCase() === "F") {
                 sexo = "Feminino";
                 break;
             } else {
@@ -92,16 +92,16 @@ function exercicio03() {
         
         for(a = 1; a < 50; a++) {
         estado = prompt("Estado civil - s / c / v / d");
-            if(estado === "s" || estado === "S") {
+            if(estado.toUpperCase() === "S") {
                 estado = "Solteiro(a)";
             break;
-        } else if(estado === "c" || estado === "C") {
+        } else if(estado.toUpperCase() === "C") {
                 estado = "Casado(a)";
             break;
-        } else if(estado === "v" || estado === "V") {
+        } else if(estado.toUpperCase() === "V") {
                 estado = "Viuvo(a)";
             break;
-        } else if(estado === "d" || estado === "D") {
+        } else if(estado.toUpperCase() === "D") {
                 estado = "Divorciado(a)";
             break;
         } else {
