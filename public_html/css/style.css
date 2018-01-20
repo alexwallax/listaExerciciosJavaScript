@@ -15,7 +15,7 @@ div {
 #esquerda {
     
     padding: 20px;
-    background: linear-gradient(red, yellow);
+    background: linear-gradient(gold, red);
     border-radius: 40px;
     height: 390px;
     width: 33%;
@@ -24,7 +24,7 @@ div {
 #central {
      
     padding: 20px;
-    background: linear-gradient(#ffffff, background );
+    background: linear-gradient(gold, background );
     border-radius: 40px;
     height: 390px;
     width: 33%;
@@ -34,7 +34,7 @@ div {
 #direita {
      
     padding: 20px;
-    background:linear-gradient(darkorange, aqua);
+    background:linear-gradient(gold, aqua);
     border-radius: 40px;
     height: 390px;
     width: 33%;
