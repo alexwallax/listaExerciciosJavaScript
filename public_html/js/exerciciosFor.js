@@ -1,6 +1,5 @@
 
 
-
 function exercicioFor01() {
 //Faça um programa que peça uma nota, entre zero e dez. 
 //Mostre uma mensagem caso o valor seja inválido e continue 
@@ -126,34 +125,31 @@ function exemploFor06() {
 
 function exemploFor07() {
 //Faça um programa que leia 5 números e informe o maior número.
-    var maior = 0;
-    for (i = 0; i < 5; i++) {
-        aux = parseInt(prompt("informe um número " + i));
-        if (aux > maior) {
-            maior = aux;
+    var maior;
+    for (var i = 0; i < 5; i++) {
+        numero = parseFloat(prompt("Digite um número"));
+        if(numero > maior || i == 0) {
+            maior = numero;
         }
-        document.write(aux);
     }
-}
+    document.write(maior);
+    }
+
 
 
 function mediaFor08() {
 //Faça um programa que leia 5 números e 
-//informe a soma e a média dos números.    
-    var num;
-    var media;
-    var soma;
-
+//informe a soma e a média dos números.      
+    var soma = 0;
     for (i = 0; i < 5; i++) {
-        num = parseFloat(prompt("Digite o numero " + i));
-
-    }
-    soma = num + num + num + num + num;
-    media = soma / 5;
-
+        numero = parseFloat(prompt("Digite o numero " + i));
+        soma += numero; 
+    } 
+    var media = soma / 5;
     document.write("Soma " + soma + "<br>");
     document.write("Media " + media);
 }
+
 
 function exemploFor09() {
 //Faça um programa que imprima na tela apenas os 
@@ -163,6 +159,20 @@ function exemploFor09() {
         
         if((i % 2) != 0) {
         document.write("<br>" + i);
+        }
+    }
+}
+
+
+function exemploFor10() {
+//Faça um programa que receba dois números inteiros e 
+//gere os números inteiros que estão no intervalo compreendido por eles.    
+    n1 = parseInt(prompt("Digite o 1º número"));
+    n2 = parseInt(prompt("Digite o 2º número"));
+    while(n1 < n2) {
+        for(i = n1; n1 < n2; i++) {
+            document.write(i);
+           
         }
     }
 }
