@@ -20,7 +20,6 @@ function exercicioFor01() {
 }
 
 
-
 function exercicioFor02() {
 //Faça um programa que leia um nome de usuário e a sua senha e 
 //não aceite a senha igual ao nome do usuário, mostrando uma 
@@ -37,7 +36,6 @@ function exercicioFor02() {
         }
     }
 }
-
 
 
 function exercicioFor03() {
@@ -115,6 +113,7 @@ function exercicioFor03() {
     }
 }
 
+
 function exemploFor06() {
 //Faça um programa que imprima na tela os números de 1 a 20, 
 //um abaixo do outro. Depois modifique o programa para que 
@@ -129,20 +128,44 @@ function exemploFor07() {
 //Faça um programa que leia 5 números e informe o maior número.
     var maior = 0;
     for (i = 0; i < 5; i++) {
-        aux = parseInt(prompt("informe um número " + i));      
-        if(aux > maior){
-        maior = aux;   
+        aux = parseInt(prompt("informe um número " + i));
+        if (aux > maior) {
+            maior = aux;
         }
-         document.write(maior); 
+        document.write(aux);
     }
+}
 
-      
+
+function mediaFor08() {
+//Faça um programa que leia 5 números e 
+//informe a soma e a média dos números.    
+    var num;
+    var media;
+    var soma;
+
+    for (i = 0; i < 5; i++) {
+        num = parseFloat(prompt("Digite o numero " + i));
+
+    }
+    soma = num + num + num + num + num;
+    media = soma / 5;
+
+    document.write("Soma " + soma + "<br>");
+    document.write("Media " + media);
+}
+
+function exemploFor09() {
+//Faça um programa que imprima na tela apenas os 
+//números ímpares entre 1 e 50.
+   
+    for (i = 0; i <= 50; i++) {
         
+        if((i % 2) != 0) {
+        document.write("<br>" + i);
+        }
     }
-
-
-
-
+}
 
 
 
