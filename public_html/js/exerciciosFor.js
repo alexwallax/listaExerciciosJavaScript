@@ -169,11 +169,11 @@ function exemploFor10() {
 //gere os números inteiros que estão no intervalo compreendido por eles.    
     n1 = parseInt(prompt("Digite o 1º número"));
     n2 = parseInt(prompt("Digite o 2º número"));
-    while(n1 < n2) {
-        for(i = n1; n1 < n2; i++) {
-            document.write(i);
+   
+        for(i = 0; i < 1; i++) {
            
-        }
+           
+        
     }
 }
 
