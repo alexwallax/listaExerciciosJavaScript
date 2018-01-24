@@ -137,3 +137,27 @@ function exemplowhile03() {
     
 }
 
+function vetores() {
+//    var notas = new Array(10, 2, 3, 5, 1, 2);
+//
+//    for(var i = 0; i < notas.length; i++) {
+//        alert(notas[i]);       
+//   }
+var ademir = {nome:"Admemir", idade:30, sexo:"m", altura:1.80};
+
+    alert(ademir["idade"]);
+    alert(ademir.length); // o length mostra a quantidade de elementos do vetor  
+}
+
+function vetores02() {
+    for(i = 0; i < 3; i++) {
+        for(j = 0; j < 3; j++) {
+            var texto = prompt("Digite");
+            document.write(texto + "  ");
+        }
+        document.write("<br>");
+    }
+}
+
+
+

@@ -128,13 +128,12 @@ function exemploFor07() {
     var maior;
     for (var i = 0; i < 5; i++) {
         numero = parseFloat(prompt("Digite um número"));
-        if(numero > maior || i == 0) {
+        if (numero > maior || i == 0) {
             maior = numero;
         }
     }
     document.write(maior);
-    }
-
+}
 
 
 function mediaFor08() {
@@ -143,8 +142,8 @@ function mediaFor08() {
     var soma = 0;
     for (i = 0; i < 5; i++) {
         numero = parseFloat(prompt("Digite o numero " + i));
-        soma += numero; 
-    } 
+        soma += numero;
+    }
     var media = soma / 5;
     document.write("Soma " + soma + "<br>");
     document.write("Media " + media);
@@ -154,11 +153,11 @@ function mediaFor08() {
 function exemploFor09() {
 //Faça um programa que imprima na tela apenas os 
 //números ímpares entre 1 e 50.
-   
+
     for (i = 0; i <= 50; i++) {
-        
-        if((i % 2) != 0) {
-        document.write("<br>" + i);
+
+        if ((i % 2) != 0) {
+            document.write("<br>" + i);
         }
     }
 }
@@ -167,20 +166,106 @@ function exemploFor09() {
 function exemploFor10() {
 //Faça um programa que receba dois números inteiros e 
 //gere os números inteiros que estão no intervalo compreendido por eles.    
-    n1 = parseInt(prompt("Digite o 1º número"));
-    n2 = parseInt(prompt("Digite o 2º número"));
-   
-        for(i = 0; i < 1; i++) {
-           
-           
-        
+    var inicio = parseInt(prompt("valor inicial"));
+    var fim = parseInt(prompt("valor final"));
+    var soma = 0;
+    for (i = inicio; i <= fim; i++) {
+        document.write(i + "<br>");
+        soma += i;
+    }
+    document.write(soma);
+}
+
+
+function exemploFor() {
+//1 1 2 3 5 8 13   (fibronasse) 
+    var n = parseInt(prompt("Informe o n-ésimo termo"));
+    var atual = 1, anterior = 1;
+    for (var i = 0; i < n; i++) {
+        if (i == 0) {
+            document.write(anterior + "<br>");
+            document.write(atual + "<br>");
+        } else {
+            document.write(atual + "<br>")
+        }
+        var aux = atual;
+        atual = anterior + atual;
+        anterior = aux;
     }
 }
 
 
 
+function vetores() {
+//    var notas = new Array(10, 2, 3, 5, 1, 2);
+//
+//    for(var i = 0; i < notas.length; i++) {
+//        alert(notas[i]);       
+//   }
+    var ademir = {nome: "Admemir", idade: 30, sexo: "m", altura: 1.80};
+
+    alert(ademir["idade"]);
+    alert(ademir.length); // o length mostra a quantidade de elementos do vetor  
+}
+
+function vetores02() {
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            var texto = prompt("Digite");
+            document.write(texto + "  ");
+        }
+        document.write("<br>");
+    }
+}
 
 
+function vetores() {
+    var notas = new Array();
+    notas[0] = 3;
+    notas[2] = 5;
+    notas[1] = 2;
+    notas[4] = 25;
+    notas[3] = 10;
+    for (var i = 0; i < notas.length; i++) {
+        alert(notas[i]);
+
+    }
+}
+
+
+//Faça um Programa que leia um vetor de 5 números inteiros e mostre-os.
+function exercicioVetores01() {
+
+    var n = new Array();
+
+    for (i = 0; i < 5; i++) {
+        n[i] = Number(prompt("Digite os números"));
+        document.write(n[i] + "<br>");
+    }
+}
+
+
+//Faça um Programa que leia um vetor de 10 números 
+//reais e mostre-os na ordem inversa.
+function exercicioVetores02() {
+
+    var n = new Array(10);
+
+    for (i = 0; i < 10; i++) {
+        n[i] = Number(prompt("Digite os números"));
+        maior = 0;
+        if(n[i] > maior) {
+        aux = n[i];
+        n[i] = maior;
+        maior = aux;
+        
+        document.write(n[i] + "<br>");
+        }
+        
+       
+    }
+
+}
 
 
 
