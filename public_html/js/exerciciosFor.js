@@ -253,14 +253,13 @@ function exercicioVetores02() {
 
     for (i = 0; i < 10; i++) {
         n[i] = Number(prompt("Digite os números"));
-        maior = 0;
-        if(n[i] > maior) {
-        aux = n[i];      
-        
-        document.write(n[i] + "<br>");
+            for () {
+                document.write(n[i] + "<br>");
+
+            }
         }
-        
-       
+
+
     }
 
 }
