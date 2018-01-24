@@ -255,9 +255,7 @@ function exercicioVetores02() {
         n[i] = Number(prompt("Digite os números"));
         maior = 0;
         if(n[i] > maior) {
-        aux = n[i];
-        n[i] = maior;
-        maior = aux;
+        aux = n[i];      
         
         document.write(n[i] + "<br>");
         }
