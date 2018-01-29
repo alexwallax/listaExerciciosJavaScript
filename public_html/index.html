@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>   
-        
+
         <script src="js/maiorMenor.js"></script>        
         <script src="js/media.js"></script>
         <script src="js/vogal.js"></script>
@@ -23,7 +23,7 @@
         <script src="js/exerciciosFor.js"></script>
         <script src="js/while.js"></script>
         <script src="js/exercicio04.js"></script>
-        
+
         <script>
 //            function exemplo01() {
 //                alert("Texte");
@@ -47,30 +47,43 @@
 //            } else {
 //                alert("Uma das notas não é valida");
 //            }
+
+//            function questao1(numero) {
+//                var resposta = "";
+//                for (var i = 1; i <= numero; i++) {
+//                    for (var j = 1; j <= i; j++) {
+//                        resposta += i + " ";
+//                    }
+//                    resposta += "<br>";
+//                }
+//                return resposta;
+//            }
+//            document.write(questao1(5));
             
             function questao1(numero) {
                 var resposta = "";
                 for (var i = 1; i <= numero; i++) {
-                    for(var j = 1; j <= i; j++){
-                        resposta += i + " ";
+                    for (var j = 1; j <= i; j++) {
+                        resposta += j + " ";
                     }
                     resposta += "<br>";
                 }
                 return resposta;
             }
+            document.write(questao1(9));            
             
-            document.write(questao1(5));          
+            
 
         </script>
-        
+
     </head>
     <body>
-        
-        
+
+
         <div class="col-md-12" id="geral">
-        
+
             <div class="col-md-4" id="esquerda" >
-                        
+
                 <input type="button" value="exercicio o que é uma vogal" class="btn btn-danger" onclick="vogal()">
                 <br>
                 <input type="button" value="Qual o menor preço" class="btn btn-danger" onclick="precoProduto()">
@@ -83,7 +96,7 @@
                 <br>
 
             </div>
-            
+
             <div class="col-md-4" id="central">
                 <input type="button" value="mostra o maior e o menor número" class="btn btn-info" onclick="maiorMenor()">
                 <br>
@@ -105,7 +118,7 @@
                 <input type="button" value="EXEMPLOS" class="btn btn-primary" onclick="mediaFor08()">
                 <br>
             </div>
-            
+
         </div>    
     </body>
 </html>
