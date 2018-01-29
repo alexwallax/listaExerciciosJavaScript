@@ -23,8 +23,37 @@
         <script src="js/exerciciosFor.js"></script>
         <script src="js/while.js"></script>
         <script src="js/exercicio04.js"></script>
+        
+        <script>
+            function exemplo01() {
+                alert("Texte");
+            }
+            function exemplo02(texto) {
+                alert(texto);
+            }
+            
+            
+            function mediaUFRN(nota1, nota2, nota3) {
+                
+                if(!isNaN(nota1 && !isNaN(nota2) && !isNaN(nota3))){
+                return (nota1*4 + nota2*5 + nota3*6) / 15;
+            }
+            return false;
+            }
+            
+            var media = mediaUFRN(2, 5, 7);
+            if(media) {
+                alert(madia);
+            } else {
+                alert("Uma das notas não é valida-");
+            }
+
+        </script>
+        
     </head>
     <body>
+        
+        
         <div class="col-md-12" id="geral">
         
             <div class="col-md-4" id="esquerda" >

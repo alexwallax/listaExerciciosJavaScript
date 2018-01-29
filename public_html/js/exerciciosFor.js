@@ -194,8 +194,6 @@ function exemploFor() {
     }
 }
 
-
-
 function vetores() {
 //    var notas = new Array(10, 2, 3, 5, 1, 2);
 //
@@ -244,7 +242,6 @@ function exercicioVetores01() {
     }
 }
 
-
 //Faça um Programa que leia um vetor de 10 números 
 //reais e mostre-os na ordem inversa.
 function exercicioVetores02() {
@@ -253,15 +250,13 @@ function exercicioVetores02() {
 
     for (i = 0; i < 10; i++) {
         n[i] = Number(prompt("Digite os números"));
-            for () {
-                document.write(n[i] + "<br>");
-
-            }
-        }
-
-
+            var maior = 0;
+//            for (n[i] >) {
+//                document.write(n[i] + "<br>");
+//
+//            }
+//        }
     }
-
 }
 
 
