@@ -10,6 +10,7 @@
                 
                 default:
                     document.write("Você digitou uma consoante");
+                    
             }
         
             }
