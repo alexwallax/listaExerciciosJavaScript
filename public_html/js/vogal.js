@@ -9,7 +9,7 @@
                     break;
                 
                 default:
-                    alert("Você digitou uma consoante");
+                    document.write("Você digitou uma consoante");
             }
         
             }
